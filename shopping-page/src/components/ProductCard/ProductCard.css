@@ -1,0 +1,24 @@
+.product-card {
+    flex-basis: 20%;
+    border: 0.5px solid #E0E0E0;
+    border-radius: 0.5rem;
+}
+.product-img {
+    height: 15rem;
+}
+.product-img-img {
+    height: 15rem;
+    width: 100%;
+}
+.product-link {
+    display: block;
+    color: #FFF;
+    text-decoration: none;
+    background-color: #2F3C7E;
+    width: max-content;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+.product-link:hover {
+    opacity: 0.9;
+}

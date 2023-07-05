@@ -1,0 +1,64 @@
+.toggle {
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.toggle a {
+    text-decoration: none;
+    color: #262626;
+    font-size: 24px;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #8AAAE5;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.menu-list {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.menu-list-item {
+    list-style: none;
+}
+
+.menu-list-link {
+    padding: 10px;
+    display: inline-block;
+    font-family: "Vazir";
+    font-size: 2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFF;
+    border-radius: 0.5rem;
+}
+
+.menu-list-link:hover {
+    background: #FBEAEB;
+    color: #242424;
+}
+
+.menu.active {
+    left: 0;
+    overflow: auto;
+}
+.rotate {
+    transform: rotate(90);
+}

@@ -1,0 +1,46 @@
+.home-page {
+    background-color: #FFF;
+    min-height: 100vh;
+    font-family: "Vazir";
+}
+
+.home-page-brand {
+    font-family: "Great Vibes";
+    color: #8AAAE5;
+}
+.products-section-title {
+    margin-top: 3rem;
+}
+.products-section-title::before {
+    content: "------";
+    display: inline-block;
+    margin-left: 0.5rem;
+    letter-spacing: -3px;
+    color: #8AAAE5
+}
+.products-container {
+    width: 90%;
+    background-color: #FFF;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin-bottom: 10rem;
+}
+.filter-icon {
+    transition: 0.4s;
+}
+.filter-icon:hover {
+    background-color: #EEE;
+    cursor: pointer;
+}
+.product-cards-section {
+    flex-wrap: wrap;
+}
+.pagination {
+    direction: ltr;
+}
+.page-link {
+    cursor: pointer;
+}
+.css-b62m3t-container {
+    width: 15rem;
+    margin-right: 1rem;
+}
