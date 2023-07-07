@@ -1,9 +1,8 @@
+.navbar {
+    background-color: #EEE;
+}
 .toggle {
-    position: fixed;
-    top: 40px;
-    left: 40px;
     z-index: 2;
-    cursor: pointer;
 }
 
 .toggle a {
@@ -12,6 +11,10 @@
     font-size: 24px;
 }
 
+.navbar-logo {
+    font-family: "Great Vibes";
+    color: #8AAAE5;
+}
 .menu {
     margin: 0;
     padding: 0;
@@ -24,13 +27,33 @@
     z-index: 1;
     transition: 0.5s;
 }
-
-.menu-list {
+.cart-menu {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 33%;
+    height: 100%;
+    background: #8AAAE5;
+    z-index: 1;
+    transition: 0.5s;
+}
+.menu-list  {
     margin: 0;
     padding: 0;
     position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.cart-menu-list  {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    right: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
 }
@@ -57,6 +80,10 @@
 
 .menu.active {
     left: 0;
+    overflow: auto;
+}
+.cart-menu.active {
+    right: 0;
     overflow: auto;
 }
 .rotate {
