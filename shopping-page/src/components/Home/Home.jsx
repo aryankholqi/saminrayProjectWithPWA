@@ -38,6 +38,10 @@ export default function Home() {
   }, [])
   pagesNumber = Array.from(Array(pagesCount).keys());
   function changePaginate(newPage) {
+    setIsLoading(true)
+    setTimeout(()=>{
+      setIsLoading(false)
+    },2000)
     setCurrentPage(newPage)
     let endIndex = pageSize * newPage
     let startIndex = endIndex - pageSize
@@ -45,8 +49,11 @@ export default function Home() {
     setPaginatedProducts(allShownProducts)
   }
   function changeSortHandler(event) {
+    setIsLoading(true)
+    setTimeout(()=>{
+      setIsLoading(false)
+    },2000)
     let sortedArray = [...products]
-
     if (event.value === "Most Popular") {
       sortedArray.sort((a, b) => b.rating.rate - a.rating.rate);
     } else if (event.value === "Default") {
