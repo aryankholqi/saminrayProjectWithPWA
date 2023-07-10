@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import "./ProductCard.css"
-import Skeleton, { SkeletonTheme } from 'react-loading-skeleton'
 
 export default function ProductCard(props) {
   return (

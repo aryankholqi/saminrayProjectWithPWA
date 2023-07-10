@@ -5,6 +5,10 @@ import routes from './routes'
 
 export default function App() {
   const router = useRoutes(routes)
+  if ("serviceWorker" in navigator) {
+    console.log("registered");
+    navigator.serviceWorker.register("sw.js")
+  }
   return (
     <Fragment>
       {router}
